@@ -16,6 +16,8 @@ Including another URLconf
 from simplemooc.core.views import contact, home
 from django.urls import path
 
+app_name = 'core'
+
 urlpatterns = [
     path('', home, name="home"),
     path('contato/', contact, name="contact"),
